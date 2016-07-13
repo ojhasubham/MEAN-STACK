@@ -1,0 +1,19 @@
+(1) remove bootstarp.js & css file in exclude form gruntfile.js 
+
+(2) add following code in OwlCarousel's .bower.json file
+ "main": [
+    "owl-carousel/owl.carousel.css",
+    "owl-carousel/owl.carousel.js"
+  ],
+  
+(3) add following code in jquery.contdown's .bower.json file
+	"main": "src/jquery.countdown.js",
+	
+(4) change waypoint lib in .bower.json file in main section
+		noframework.waypoint.js
+(5) add following code in counter-up's bower.json file
+	"main": [
+		"jquery.counterup.js"
+	],
+(6) change ngmap bower.json file code of main to following
+	 "main": "build/scripts/ng-map.js",

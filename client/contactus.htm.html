@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta name="keywords" content="HomeMade, Real estate, Listings, For sale, For rent, Condo units, townhouses, condominiums" />   
+<meta name="description" content="HomeMade Real Estate Template" /> 
+	
+<link href="./style.css" rel="stylesheet" type="text/css" />
+<link href="./css/superfish.css" rel="stylesheet" type="text/css" />
+<link href="./js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+
+<link rel="alternate" type="application/rss+xml" title="#" href="#" />
+<link rel="shortcut icon" href="#" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="./js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="./js/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="./js/jflickrfeed.min.js"></script>
+<script type="text/javascript" src="./js/setup.js"></script>
+<script type="text/javascript" src="./js/superfish.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('ul.sf-menu').superfish();
+	}); 
+</script>
+<script type="text/javascript" src="./js/jquery.tipsy.js"></script>
+<script type='text/javascript'>
+	$(function() {    
+		$('.sociable li a img').tipsy({gravity: 's'});		
+	});
+</script>
+<script type="text/javascript" src="./js/jquery.validate.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#cform").validate();
+	});
+</script>
+
+<title>HomeMade Real Estate Template</title>
+<meta charset="UTF-8"></head>
+
+<body ng-app="weddingSiteApp">
+
+<!--SITE CONTAINER--> 
+<div id="container">
+	<!--HEADER-->	
+	<div id="header">
+		<div class="logo-info clear">
+			<!--LOGO-->
+			<div class="logo"><h1><a href="./index.htm.html"><img src="./img/logo.png" alt="" title="" /></a></h1></div>
+			<!--CALL-->
+			<div class="top-info">
+				<label>Call us: 458-698-7000</label>
+				<span>Tuesday. November 29, 2011</span>
+			</div>
+		</div>
+		<div class="menu-sociable clear">
+			<!--MENU-->
+			<div class="menu" id="dropdown">
+				<ul class="sf-menu">
+					<li>
+						<a href="index.html">Home</a>						
+					</li>
+					<li>
+						<a href>Content</a>											
+					</li>
+					<li>
+						<a href="aboutus.htm.html">About us</a>
+					</li>
+					<li>
+						<a href="project.htm.html">Projects</a>
+					</li>
+					<li><a href="contactus.html">Contact us</a></li>					
+				</ul>
+			</div>
+			<!--SOCIABLE-->
+			<ul class="sociable clear">
+				<li><span>Find us here</span></li>
+				<li><a href><img src="./img/icons/rss.png" alt="Subscribe our Feed" title="Subscribe our Feed" /></a></li>
+				<li><a href><img src="./img/icons/twitter.png" alt="Twitter" title="Twitter" /></a></li>
+				<li><a href><img src="./img/icons/facebook.png" alt="Facebook" title="Facebook" /></a></li>
+				<li><a href><img src="./img/icons/vimeo.png" alt="Vimeo" title="Vimeo" /></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--CONTENT-->
+	<div id="site-content" class="clear">
+		<!--RIGHT-->
+		<div class="right-content">
+			<!--CONTACT US-->
+			<div class="contact">
+				<h2>Contact us</h2>
+				<iframe width="607" height="367" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Cagayan+de+Oro,+Philippines&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=60.158465,135.263672&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=Cagayan+de+Oro,+Misamis+Oriental,+Northern+Mindanao,+Philippines&amp;t=m&amp;z=11&amp;ll=8.454236,124.631898&amp;output=embed"></iframe>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+				</p>	
+				<p>
+					Sed ac urna mauris. Morbi aliquet libero id velit mattis eu porta nisi malesuada. Morbi in leo augue. Donec elementum nulla et tellus ullamcorper mattis. Quisque aliquet sem a est iaculis vulputate. Pellentesque sit amet nulla ac purus interdum placerat. Etiam mauris augue, iaculis sit amet vestibulum mollis, accumsan a libero. Aenean mollis accumsan fringilla. Nam eget massa nisl, ut pellentesque lorem. In rutrum vestibulum nibh at lobortis. Sed a purus quam.
+				</p>	
+			</div>	
+			<!--FILLUP FORMS-->
+			<div class="fillup-form" ng-controller="RsvpCtrl">
+				<h4>Fillup Form</h4>
+				
+					<form name="rsvpForm" role="form" method="post" id="rsvpForm" novalidate>
+						<ul class="clear">
+						<li>
+							<label  for="yourName">Surname</label>
+							<input  name="yourName" type="text" id="yourName" ng-model="yourName" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your first name" class="required">
+							<span class="rsvp-err" ng-show="rsvpForm.yourName.$dirty && rsvpForm.yourName.$invalid">
+							<span ng-show="rsvpForm.yourName.$error.required">Your Surname is required.</span>
+							</span>
+						</li>
+						<li>
+							<label for="middleName">Middle name</label>
+							<input name="middleName" type="text" id="middleName" ng-model="middleName" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your middle name" class="required">
+							<span class="rsvp-err" ng-show="rsvpForm.middleName.$dirty && rsvpForm.middleName.$invalid">
+							<span ng-show="rsvpForm.middleName.$error.required">Your Middle name is required.</span>
+							</span>
+						</li>
+
+						<li>
+							<label  for="lastName">Last name</label>
+							<input  name="lastName" type="text" id="lastName" ng-model="lastName" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your last name" required>
+							<span class="rsvp-err" ng-show="rsvpForm.lastName.$dirty && rsvpForm.lastName.$invalid">
+							<span ng-show="rsvpForm.lastName.$error.required">Your Last name is required.</span>
+							</span>
+						</li>
+						<li>
+							<label for="country">Country</label>
+							<input name="country" type="text" id="country" ng-model="country" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your country name" required>
+							<span class="rsvp-err" ng-show="rsvpForm.country.$dirty && rsvpForm.country.$invalid">
+							<span ng-show="rsvpForm.country.$error.required">Your Country is required.</span>
+							</span>
+						</li>
+						<li>
+							<label  for="state">State</label>
+							<input class="form-control" name="state" type="text" id="state" ng-model="state" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your state name" required>
+							<span class="rsvp-err" ng-show="rsvpForm.state.$dirty && rsvpForm.state.$invalid">
+							<span ng-show="rsvpForm.state.$error.required">Your State is required.</span>
+							</span>
+						</li>
+						<li>
+							<label  for="address">Address</label>
+							<input  name="address" type="text" id="address" ng-model="address" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your Adress" required>
+							<span class="rsvp-err" ng-show="rsvpForm.address.$dirty && rsvpForm.address.$invalid">
+							<span ng-show="rsvpForm.address.$error.required">Your Adress is required.</span>
+							</span>
+						</li>
+						<li>
+							<label  for="postalCode">Postal code</label>
+							<input  name="postalCode" type="text" id="postalCode" ng-model="postalCode" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your Postal code">							
+						</li>
+						<li>
+							<label  for="telephone">Telephone</label>
+							<input  name="telephone" type="text" id="telephone" ng-model="telephone" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your Telephone" required>
+							<span class="rsvp-err" ng-show="rsvpForm.telephone.$dirty && rsvpForm.telephone.$invalid">
+							<span ng-show="rsvpForm.telephone.$error.required">Your Telephone is required.</span>
+							</span>
+						</li>
+						<li>
+							<label  for="fax">Fax</label>
+							<input name="fax" type="text" id="fax" ng-model="fax" ng-minlength="3" 
+							ng-maxlength="20" placeholder="Your Fax" required>
+							<span class="rsvp-err" ng-show="rsvpForm.fax.$dirty && rsvpForm.fax.$invalid">
+							<span ng-show="rsvpForm.fax.$error.required">Your fax is required.</span>
+							</span>
+						</li>
+						<li>
+							<label for="yourEmail">Email</label>
+							<input name="email" type="email" id="email" ng-model="email" placeholder="Your email address" required>
+							<span class="rsvp-err" ng-show="rsvpForm.email.$dirty && rsvpForm.email.$invalid">
+							<span ng-show="rsvpForm.email.$error.required">Email is required.</span>
+							<span ng-show="rsvpForm.email.$error.email">Invalid email address.</span>
+							</span>
+						</li>
+						<li>
+							<label  for="yourMessage">Cover letter</label>
+							<input  name="human" type="hidden" id="yourReal">
+						</li> 
+						<li>
+							<textarea name="yourMessage" id="yourMessage" ng-model="yourMessage" placeholder="Any special request or Message" rows="6"></textarea>
+						</li>
+						<li>                            
+							<button class="contactbtn" type="submit" ng-disabled="!rsvpForm.$valid" ng-click="submit(rsvpForm)">Submit</button>							
+						</li>
+						<li>                           
+							<span ng-show="result" style="color:green;">Your detail submit successfully</span>							
+						</li>
+					</ul>
+					</form>
+				
+			</div>
+		</div>
+		<!--SIDEBAR-->
+		<div class="sidebar">
+			<!--SEARCH-->
+			<div class="search">
+				<h5>Search Properties</h5>
+				<form action="#" method="post">
+					<ul>
+						<li><input type="text" name="pname" onfocus="if(this.value=='Property Name'){this.value='';}" onblur="if(this.value==''){this.value='Property Name';}" value="Property Name" /></li>
+						<li><input type="text" name="address" onfocus="if(this.value=='Address'){this.value='';}" onblur="if(this.value==''){this.value='Address';}" value="Address" /></li>
+						<li><input type="text" name="from" onfocus="if(this.value=='Price from'){this.value='';}" onblur="if(this.value==''){this.value='Price from';}" value="Price from" class="small" /> -- <input type="text" name="to" onfocus="if(this.value=='Price to'){this.value='';}" onblur="if(this.value==''){this.value='Price to';}" value="Price to" class="small" /></li>
+					</ul>
+					<p class="btns"><input type="submit" value="Search" class="btnsearch" name="btnsearch" /> <input type="button" value="Advance Search" class="btnadvance" name="btnadvance" /></p>	
+				</form>
+			</div>
+			<!--MORE INFORMATIONS-->
+			<div class="more-info">
+				<h5>More Information</h5>
+				<ul>
+					<li><span>Address:</span> Walter Stree 14</li>
+					<li><span>Zip / City:</span> 90280 Los Angeles CA</li>
+					<li><span>Email:</span> <a href="#">your-email@example.com</a></li>
+					<li><span>Phone:</span> +02 5896 3214</li>
+					<li><span>Fax:</span> 123-475-5006</li>
+				</ul>
+			</div>
+			<!--SIDE PARAGRAPH-->
+			<div class="side-paragraph">
+				<h5>Side Paragraph</h5>
+				<img src="./img/pimage.jpg" alt="" title="" />
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+				</p>
+			</div>			
+		</div>
+	</div>
+	
+	<!--FOOTER-->
+	<div id="footer" class="clear">
+		<div class="copyright">Copyright 2011. All rights reserved.</div>
+		<div class="dev">Designed and Developed by: <a href="#">Mabuc</a> / Remove this after purchase</div>
+	</div>
+</div>
+
+</body>
+
+</html>
